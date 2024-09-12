@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Decisions_1.0",
-    "slug": "Decisions_1.0",
+    "name": "Decicions-Mobile",
+    "slug": "Decicions-Mobile",
     "version": "1.0.0",
-    "orientation": "landscape",
-    "icon": "./assets/images/icon.png",
-    "scheme": "Decisions_1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/worldmap.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "black"
     },
     "ios": {
       "supportsTablet": true
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#000000"
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
