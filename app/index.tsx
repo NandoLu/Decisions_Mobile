@@ -1,32 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View, TouchableOpacity, ImageBackground } from "react-native";
-import { Link } from "expo-router";
-import estilos from '../styles/styles';
+import React from 'react';
+import { Text, View, TouchableOpacity, Image, StatusBar } from 'react-native';
+import { Link } from 'expo-router';
+import styles from '../typeScript/styles';
 
-export default function Home() {
-
+const App = () => {
   return (
-    <ImageBackground source={require('../assets/images/worldmap.png')} style={estilos.background}>
-      <StatusBar hidden={true} />
-
-      <View style={estilos.container}>
-        <Text style={estilos.title}>Decisions</Text>
-        
-        <Link href={"/saves"} style={estilos.button}>  
-          <Text style={estilos.text}>Jogar</Text>
-        </Link>
-
-        <View style={estilos.btn}>
-        <Link href={"/saves"} style={estilos.button2}>  
-          <Text style={estilos.text2}>Pontuações</Text>
-        </Link>
-        <Link href={"/saves"} style={estilos.button2}>  
-          <Text style={estilos.text2}>Configurações</Text>
-        </Link>
-        </View>
-        
-
-      </View>
-    </ImageBackground>
+    <View style={styles.container}>
+      <StatusBar backgroundColor="black" barStyle="light-content" />
+      <Image source={require('@/assets/images/balanca.png')} style={styles.icon} />
+      <Text style={styles.title}>Decisions</Text>
+      <Link href="/cenario" style={styles.startButton}>
+        <Text style={styles.startButtonText}>Começar</Text>
+      </Link>
+      <Image source={require('@/assets/images/engrenagem.png')} style={styles.settingsIcon} />
+    </View>
   );
-}
+};
+
+export default App;
